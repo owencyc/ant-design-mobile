@@ -77,7 +77,7 @@ class AntTabBar extends React.Component<AntTabbarProps, any> {
           tintColor={tintColor}
           unselectedTintColor={unselectedTintColor}
           dataAttrs={getDataAttr(cProps)}
-          onClick={() => cProps.onPress && cProps.onPress()}
+          onClick={() => cProps.onPress && cProps.onPress(cProps, index)}
         />
       );
     });

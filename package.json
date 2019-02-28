@@ -1,7 +1,7 @@
 {
-  "name": "antd-mobile",
+  "name": "antd-mobile-oj",
   "version": "2.2.9",
-  "description": "基于 React 的移动设计规范实现",
+  "description": "基于 React 的移动设计规范实现(个人修改版基于2.2.9)",
   "homepage": "http://mobile.ant.design",
   "keywords": [
     "ant",
