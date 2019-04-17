@@ -3,6 +3,7 @@ function formatIt(date: Date, form: string) {
   const dateStr = `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(
     date.getDate(),
   )}`;
+  const monthStr = `${date.getFullYear()}-${pad(date.getMonth() + 1)}`;
   const timeStr = `${pad(date.getHours())}:${pad(date.getMinutes())}`;
   if (form === 'YYYY-MM-DD') {
     return dateStr;
@@ -10,11 +11,15 @@ function formatIt(date: Date, form: string) {
   if (form === 'HH:mm') {
     return timeStr;
   }
+  if (form === 'YYYY-MM') {
+    return monthStr;
+  }
   return `${dateStr} ${timeStr}`;
 }
 
 export function formatFn(instance: any, value: Date) {
   const formatsEnum = {
+    month: 'YYYY-MM',
     date: 'YYYY-MM-DD',
     time: 'HH:mm',
     datetime: 'YYYY-MM-DD HH:mm',

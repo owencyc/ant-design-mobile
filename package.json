@@ -1,5 +1,5 @@
 {
-  "name": "antd-mobile-oj",
+  "name": "antd-mobile",
   "version": "2.2.9",
   "description": "基于 React 的移动设计规范实现(个人修改版基于2.2.9)",
   "homepage": "http://mobile.ant.design",
@@ -139,7 +139,7 @@
     "site-cdn": "cdn-tools run -c ./scripts/cdn-config.js",
     "analysis": "npm run dist && node ./scripts/analysis",
     "deploy": "npm run clean && npm run site && bisheng gh-pages --push-only",
-    "pub": "cross-env BABEL_ENV=dist antd-tools run pub --skip-tag",
+    "pub": " antd-tools run pub --skip-tag",
     "lint-staged": "lint-staged",
     "lint-staged:ts": "npm run tsc && node node_modules/tslint/bin/tslint -c node_modules/antd-tools/lib/tslint.json components/**/*.tsx",
     "lint-staged:es": "eslint ./.eslintrc.js ./webpack.config.js",
