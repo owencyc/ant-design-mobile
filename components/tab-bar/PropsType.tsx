@@ -14,7 +14,7 @@ export interface TabBarProps {
 export type TabIcon = React.ReactElement<any> | { uri: string };
 export interface TabBarItemProps {
   badge?: string | number;
-  onPress?: (props : TabBarItemProps | undefined,index : number) => void;
+  onPress?: (props: TabBarItemProps | undefined,index: number) => void;
   selected?: boolean;
   icon?: TabIcon;
   selectedIcon?: TabIcon;
